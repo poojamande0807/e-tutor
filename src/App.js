@@ -27,7 +27,7 @@ function App() {
           <img
             key={index}
             src={src}
-            alt={`Image ${index + 1}`}
+            alt={`${index + 1}`}
             style={{
               width: "35%",
               height: "auto",
