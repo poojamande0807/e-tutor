@@ -4,7 +4,7 @@ import DashBoard from "./components/dashboard/DashBoard";
 import { Navbar } from "./components/navbar/NavBar";
 
 function App() {
-  const images = [
+  const imageData = [
     require("./assets/images/Become an Instructor.png"),
     require("./assets/images/Your teaching & earning steps.png"),
   ];
@@ -23,16 +23,15 @@ function App() {
           marginTop: "20px",
         }}
       >
-        {images.map((src, index) => (
+        {imageData.map((src, index) => (
           <img
             key={index}
             src={src}
-            alt={`${index + 1}`}
+            alt={`categeory${index + 1}`}
             style={{
               width: "35%",
               height: "auto",
               borderRadius: "8px",
-              // boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
               padding: "10px",
             }}
           />

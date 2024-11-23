@@ -5,7 +5,6 @@ const DashBoard = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Add class to make content visible after mounting
     const timer = setTimeout(() => setVisible(true), 500);
     return () => clearTimeout(timer);
   }, []);
