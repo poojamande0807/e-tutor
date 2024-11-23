@@ -1,0 +1,33 @@
+.category-section {
+    padding: 2rem;
+    background: #f9f9f9;
+  }
+  
+  .category-section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .category-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Gap between rows */
+  }
+  
+  .category-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px; /* Padding between images in a row */
+  }
+  
+  .category-item img {
+    width: 100%;
+    height: auto;
+    max-width: calc((100% ) - 5px); /* 4 images per row */
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
